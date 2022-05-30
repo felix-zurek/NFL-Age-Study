@@ -3,7 +3,7 @@
 This study is inspired by [this](https://fivethirtyeight.com/features/age-played-a-bigger-role-in-the-nfl-draft-its-about-time/)
 great article on age in the NFL Draft by [Michael Salfino](https://twitter.com/MichaelSalfino) from FiveThirtyEight.
 
-### Motivation
+## Motivation
 
 While the study from Salfino is great it certainly has its flaws.
 One is the use of discrete age buckets as players with the same age can
@@ -34,7 +34,7 @@ perform better than later picked players which would not be groundbreaking analy
   <img src="plots/plot_pick_age_cor.png?raw=true" width=75%>
  </p>
 
-### Methodology
+## Methodology
 
 In the following we want to perform a regression to estimate the expected AV in
 the first five years based on age and draft position of a player.
@@ -56,7 +56,7 @@ This can be rewritten into the following model:
 </p>
 In the following we will focus on <img src="https://latex.codecogs.com/png.latex?%5Cinline%20%5Cdpi%7B120%7D%20%5Cbg_white%20%5Ctilde%7Bf_2%7D%28age%29" align = "middle">
 
-### Analysis
+## Analysis
 
 Estimating the functions we find that both draft position and age are
 highly significant $\left(p < 10^{-15}\right)$ and we get the following age curve:
@@ -86,7 +86,7 @@ quite small (n = 202) especially as AV is quite noisy.
 (Blake Bortles accumulated an AV of 48 in his first five year 
 which is better than Matthew Stafford who earned 47.)
 
-### Conclusion
+## Conclusion
 
 This study suggest that age does indeed play a role independent of draft
 position when predicting the success of draftees during their rookie contract
