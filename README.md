@@ -51,7 +51,7 @@ $$ AV \sim \text{Pois}\Big(\exp\big[\beta_0 + f_1(pick) + f_2(age)\big]\Big) $$
 This can be rewritten into the following model:
 $$ AV \sim \text{Pois}\Big(\tilde{\beta_0} \times \tilde{f_1}(pick) \times \tilde{f_2}(age)\Big) \text{, with} $$ 
 $$ \tilde{\beta_0} = exp(\beta_0),\ \tilde{f_1} = exp(f_1),\ \tilde{f_2} = exp(f_2) $$
-In the following we will focus on $\tilde{f_2}(age)$.
+In the following we will focus on $f_2(age)$.
 
 ### Analysis
 
