@@ -31,7 +31,7 @@ position may be a confounding variable, i.e. when measuring that younger players
 perform better we might just end up measuring that higher picked players
 perform better than later picked players which would not be groundbreaking analysis.
 <p align="center">
-  <img src="plots/plot_pick_age_cor.png?raw=true" width=80%>
+  <img src="plots/plot_pick_age_cor.png?raw=true" width=75%>
  </p>
 
 ### Methodology
@@ -42,23 +42,23 @@ A short look at the distribution of the AV variable shows us that the outcome va
 is not normally distributed so we can not use normal regression but need to turn
 to a [Generalized Linear Model](https://en.wikipedia.org/wiki/Generalized_linear_model).\
 <p align="center">
-  <img src="plots/plot_av_density.png?raw=true" width=80%>
+  <img src="plots/plot_av_density.png?raw=true" width=75%>
  </p>
 More precisely we use a generalized additive model which leads us to the following
 assumption:
-$$ AV \sim \text{Pois}\Big(\exp\big[\beta_0 + f_1(pick) + f_2(age)\big]\Big)$$
+$$ AV \sim \text{Pois}\Big(\exp\big[\beta_0 + f_1(pick) + f_2(age)\big]\Big) $$
 (We actually use a quasi-poisson model as the AV is overdispersed.)\
 This can be rewritten into the following model:
 $$ AV \sim \text{Pois}\Big(\tilde{\beta_0} \times \tilde{f_1}(pick) \times \tilde{f_2}(age)\Big) \text{, with} $$ 
-$$\tilde{\beta_0} = exp(\beta_0),\ \tilde{f_1} = exp(f_1),\ \tilde{f_2} = exp(f_2)$$
+$$ \tilde{\beta_0} = exp(\beta_0),\ \tilde{f_1} = exp(f_1),\ \tilde{f_2} = exp(f_2) $$
 In the following we will focus on $\tilde{f_2}(age)$.
 
 ### Analysis
 
 Estimating the functions we find that both draft position and age are
-highly significant $\left(p < 10^{-15}\right)$ and we get the following age curve:
+highly significant and we get the following age curve:
 <p align="center">
-  <img src="plots/plot_f_age.png?raw=true" width=80%>
+  <img src="plots/plot_f_age.png?raw=true" width=75%>
 </p>
 This graph can be read as follows:\
 If two players are drafted at the same spot in the draft with player A being
