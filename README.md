@@ -30,8 +30,9 @@ improve their draft stock. So better players declare earlier as worse ones and s
 position may be a confounding variable, i.e. when measuring that younger players
 perform better we might just end up measuring that higher picked players
 perform better than later picked players which would not be groundbreaking analysis.
-![correlation](plot_pick_age_cor.png?raw=true)
-
+<p align="center">
+  <img src="plot_pick_age_cor.png?raw=true" width=80%>
+ </p>
 
 ### Methodology
 
@@ -40,7 +41,9 @@ the first five years based on age and draft position of a player.\
 A short look at the distribution of the AV variable shows us that the outcome variable
 is not normally distributed so we can not use normal regression but need to turn
 to a [Generalized Linear Model](https://en.wikipedia.org/wiki/Generalized_linear_model).\
-<img src="plot_av_density.png?raw=true">
+<p align="center">
+  <img src="plot_av_density.png?raw=true" width=80%>
+ </p>
 More precisely we use a generalized additive model which leads us to the following
 assumption:
 $$ AV \sim \text{Pois}\Big(\exp\big[\beta_0 + f_1(pick) + f_2(age)\big]\Big)$$
@@ -54,7 +57,9 @@ In the following we will focus on $\tilde{f_2}(age)$.
 
 Estimating the functions we find that both draft position and age are
 highly significant $\left(p < 10^{-15}\right)$ and we get the following age curve:
-<img src="plot_f_age.png?raw=true" >
+<p align="center">
+  <img src="plot_f_age.png?raw=true" width=80%>
+</p>
 This graph can be read as follows:\
 If two players are drafted at the same spot in the draft with player A being
 21.0 years old while player B is 23.03 years old (the average age of a NFL Draftee)
