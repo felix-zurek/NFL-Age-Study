@@ -30,7 +30,7 @@ improve their draft stock. So better players declare earlier as worse ones and s
 position may be a confounding variable, i.e. when measuring that younger players
 perform better we might just end up measuring that higher picked players
 perform better than later picked players which would not be groundbreaking analysis.
-
+![correlation](plot_pick_age_cor.png?raw=true)
 
 
 ### Methodology
