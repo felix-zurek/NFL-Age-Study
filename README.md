@@ -54,7 +54,7 @@ In the following we will focus on $\tilde{f_2}(age)$.
 
 Estimating the functions we find that both draft position and age are
 highly significant $\left(p < 10^{-15}\right)$ and we get the following age curve:
-<img src="plot_f_age.png?raw=true" width=80%>
+<img align="middle" src="plot_f_age.png?raw=true" width=80%>
 This graph can be read as follows:\
 If two players are drafted at the same spot in the draft with player A being
 21.0 years old while player B is 23.03 years old (the average age of a NFL Draftee)
