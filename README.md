@@ -56,7 +56,7 @@ In the following we will focus on $\tilde{f_2}(age)$.
 ### Analysis
 
 Estimating the functions we find that both draft position and age are
-highly significant and we get the following age curve:
+highly significant $\left(p < 10^{-15}\right)$ and we get the following age curve:
 <p align="center">
   <img src="plots/plot_f_age.png?raw=true" width=75%>
 </p>
