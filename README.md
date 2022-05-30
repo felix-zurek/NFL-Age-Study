@@ -39,7 +39,7 @@ In the following we want to perform a regression to estimate the expected AV in
 the first five years based on age and draft position of a player.\
 A short look at the distribution of the AV variable shows us that the outcome variable
 is not normally distributed so we can not use normal regression but need to turn
-to a [Generalized Linear Model](https://en.wikipedia.org/wiki/Generalized_linear_model).
+to a [Generalized Linear Model](https://en.wikipedia.org/wiki/Generalized_linear_model).\
 <img src="plot_av_density.png?raw=true">
 More precisely we use a generalized additive model which leads us to the following
 assumption:
@@ -54,7 +54,7 @@ In the following we will focus on $\tilde{f_2}(age)$.
 
 Estimating the functions we find that both draft position and age are
 highly significant $\left(p < 10^{-15}\right)$ and we get the following age curve:
-![age_curve_full_model](plot_f_age.png?raw=true)
+<img src="plot_f_age.png?raw=true" >
 This graph can be read as follows:\
 If two players are drafted at the same spot in the draft with player A being
 21.0 years old while player B is 23.03 years old (the average age of a NFL Draftee)
