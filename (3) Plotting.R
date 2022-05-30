@@ -53,7 +53,7 @@ p_age <- smooths %>% as_tibble() %>%
         plot.subtitle = element_text(hjust = 0.5),
         axis.title = element_text(face = "bold"))
 
-ggsave('plot_f_age.png', p_age,
+ggsave('plots/plot_f_age.png', p_age,
        width = 12, height = 9, bg = "white", dpi = 200)
 
 
@@ -73,7 +73,7 @@ p_cor <- ggplot(df, aes(x = pick, y = age))+
   theme(plot.title = element_text(hjust = 0.5, face = "bold"),
         plot.subtitle = element_text(hjust = 0.5),
         axis.title = element_text(face = "bold"))
-ggsave("plot_pick_age_cor.png",p_cor ,width = 12, height = 9, bg = "white", dpi = 200)
+ggsave("plots/plot_pick_age_cor.png",p_cor ,width = 12, height = 9, bg = "white", dpi = 200)
 
 p_density <- ggplot(df, aes(x = av_five))+
   geom_histogram(aes(y = after_stat(density)),size = 1, color = "black", binwidth = 1)+
@@ -84,4 +84,4 @@ p_density <- ggplot(df, aes(x = av_five))+
   theme(plot.title = element_text(hjust = 0.5, face = "bold"),
         plot.subtitle = element_text(hjust = 0.5),
         axis.title = element_text(face = "bold"))
-ggsave("plot_av_density.png", p_density, width = 12, height = 9, bg = "white", dpi = 200)
+ggsave("plots/plot_av_density.png", p_density, width = 12, height = 9, bg = "white", dpi = 200)
