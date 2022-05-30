@@ -46,7 +46,7 @@ to a [Generalized Linear Model](https://en.wikipedia.org/wiki/Generalized_linear
  </p>
 More precisely we use a generalized additive model which leads us to the following
 assumption:
-$$ AV \sim \text{Pois}\Big(\exp\big[\beta_0 + f_1(pick) + f_2(age)\big]\Big) $$
+![image](https://latex.codecogs.com/svg.image?AV&space;\sim&space;\text{Pois}\Big(\exp\big[\beta_0&space;&plus;&space;f_1(pick)&space;&plus;&space;f_2(age)\big]\Big))
 (We actually use a quasi-poisson model as the AV is overdispersed.)\
 This can be rewritten into the following model:
 $$ AV \sim \text{Pois}\Big(\tilde{\beta_0} \times \tilde{f_1}(pick) \times \tilde{f_2}(age)\Big) \text{, with} $$ 
