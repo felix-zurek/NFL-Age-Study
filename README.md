@@ -40,7 +40,7 @@ the first five years based on age and draft position of a player.\
 A short look at the distribution of the AV variable shows us that the outcome variable
 is not normally distributed so we can not use normal regression but need to turn
 to a [Generalized Linear Model](https://en.wikipedia.org/wiki/Generalized_linear_model).
-![density](plot_av_density.png?raw=true)
+<img src="plot_av_density.png?raw=true">
 More precisely we use a generalized additive model which leads us to the following
 assumption:
 $$ AV \sim \text{Pois}\Big(\exp\big[\beta_0 + f_1(pick) + f_2(age)\big]\Big)$$
