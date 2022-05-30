@@ -1,3 +1,4 @@
+# Author: Felix Zurek (@felixzurek)
 library(tidyverse)
 library(rvest)
 
