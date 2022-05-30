@@ -68,13 +68,14 @@ If two players are drafted at the same spot in the draft with player A being
 21.0 years old while player B is 23.03 years old (the average age of a NFL Draftee)
 we expect player A to accumulate 126.5% of the AV that we expect of player B.
 Similarly we expect that a player C who is 25.5 will earn only
-72.3% of that player B. That means that player A's expectation of AV is 
+72.3% of that of player B. That means that player A's expectation of AV is 
 126.5% / 0.723% = 174.9% of the expectation of player C.
-But what about the most important position in football, what about quarterbacks ?\
+
+But what about the most important position in football, what about quarterbacks ?
 Fitting the model with linear age parameter we get that quarterbacks neither
 have a significant main effect (p = 0.585) nor a significant interaction with age
-(p = 0.561) in other words age has no significant effect on the draft success of
-quarterbacks.
+(p = 0.561) in other words age has no significant additional effect on the draft success of
+quarterbacks when comparing with non-QBs.
 
 ### Problems
 
