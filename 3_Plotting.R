@@ -2,7 +2,7 @@
 library(tidyverse)
 library(mgcv)
 
-source('(2) Modeling.R', echo = FALSE, print.eval = FALSE)
+source('2_Modeling.R', echo = FALSE, print.eval = FALSE)
 
 # Model Analysis
 
@@ -46,7 +46,10 @@ p_age <- smooths %>% as_tibble() %>%
                   ylim = c(.45,1.5))+
   labs(x = 'Age', y = 'Expected AV (as Percentage of the Mean)',
        title = 'Younger Draft Prospects Perform Better Than Older Ones',
-       subtitle = 'NFL Drafts 2000-2017 | AV = Approximate Career Value over a players first five years',
+       subtitle = str_c('NFL Drafts 2000-2017',
+                        "AV = Approximate Value over a player's first five years",
+                        'Independent of Draft Position',
+                        sep = ' | '),
        caption = 'by @felixzurek | Data: pro-football-reference.com')+
   theme_minimal(base_size = 14)+
   theme(plot.title = element_text(hjust = 0.5, face = "bold"),
